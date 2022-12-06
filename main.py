@@ -34,15 +34,15 @@ class IngredientChecker():
 
     def preprocess(self, text):
         stop_words = set(stopwords.words('english'))
-        ingredients = []
+        ingredients_list = []
 
         # remove stop words, the word "ingredients", and leading spaces
         for item in text:
             item = item.lstrip()
             if "ingredients" not in item.lower() and item not in stop_words:
-                ingredients.append(item)
+                ingredients_list.append(item)
 
-        self.ingredients = ', '.join(ingredients)
+        self.ingredients = ', '.join(ingredients_list)
 
     def convert_image_to_text(self, path):
         # open image and convert to rgb
@@ -94,7 +94,7 @@ def start():
     print('Please enter the image file path:')
     # TODO: test more images and remove default
     # image_path = input()
-    image_path = './images/sensodyne.jpeg'
+    image_path = './images/sensodyne.png'
     checker = IngredientChecker(image_path)
     checker.report()
     checker = None
