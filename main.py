@@ -74,7 +74,7 @@ class IngredientScanner():
         print(ing_df)
 
 
-        print("\nPOSITIVE ASPECTS")
+        print("\nBENEFICIAL ASPECTS")
         pos_df = pd.DataFrame(columns=['Benefit','Ingredient','Description'])
 
         pos = []
@@ -91,8 +91,8 @@ class IngredientScanner():
 
         print(pos_df)
 
-        print("\nHARMFUL ASPECTS")
-        harm_df = pd.DataFrame(columns=['Harmful','Ingredient','Description'])
+        print("\nHAZARDOUS ASPECTS")
+        harm_df = pd.DataFrame(columns=['Hazard','Ingredient','Description'])
         name = []
         desc = []
         ings = []
@@ -100,10 +100,10 @@ class IngredientScanner():
             if len(self.analysis['harmful'][h]['list']) > 0:
                 for i in self.analysis['harmful'][h]['list']:
                     name.append(self.analysis['harmful'][h]['title'])
-                    desc.append(self.analysis['harmful'][h]['description'])
+                    desc.append(self.analysis['hgarmful'][h]['description'])
                     ings.append(i['title'])
 
-        harm_df['Harmful'] = name
+        harm_df['Hazard'] = name
         harm_df['Ingredient'] = ings
         harm_df['Description'] = desc
 
@@ -114,7 +114,6 @@ def main():
     image_path = './images/sensodyne.png'
     scanner = IngredientScanner(image_path)
     scanner.report()
-    scanner = None
 
 
 if __name__ == '__main__':
