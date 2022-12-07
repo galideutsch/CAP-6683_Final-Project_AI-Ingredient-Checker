@@ -29,6 +29,9 @@ This project utilizes image processing techniques along with ingredient analysis
 Developed by Gali Deutsch and Nicholas Bogdanovic
 
 <h1>ToDo</h1>
+
 Given more time the following changes/additions would be made:
+
 1. Add user interface to upload images / use camera to take picture
+
 2. Expand user interface to display ingredient(s) / ingredient characteristics
