@@ -1,4 +1,4 @@
-<h1>Ingredient Scanner<h1>
+<h1>Ingredient Scanner</h1>
 
 <h2>Setup</h2>
 
@@ -22,7 +22,7 @@ This project utilizes image processing techniques along with ingredient analysis
 
 Developed by Gali Deutsch and Nicholas Bogdanovic.
 
-<h2>Technologies<h2> 
+<h2>Technologies</h2> 
 
 * pytesseract and OpenCV for OCR
 * Cosmily API to retrieve EWG data and analysis: https://docs.cosmily.com/
