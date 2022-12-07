@@ -1,4 +1,4 @@
-<h1>Ingredient Scanner<h2>
+<h1>Ingredient Scanner<h1>
 
 <h2>Setup</h2>
 
